@@ -1,11 +1,11 @@
-# Class Project: Part 4
+# Class Project: Part 3
 
 This repo is the base codes of the ClassProject of 2023Spring CSCI485.
 
 ## Getting Started
-You need to copy and paste the code of Part 1, 2 and 3 to this project. 
+You need to copy and paste the code of Part 1 and Part 2 to this project. 
 Your codes need to be put under `src/CSCI485ClassProject/` and its subdirectories. 
-Verify correctness by executing the unit test of Part1/Part2/Part3 successfully.
+Once finished, you can verify it by running the unit test of Part1/Part2.
 
 ## Project Structure Overview
 
@@ -16,10 +16,11 @@ Verify correctness by executing the unit test of Part1/Part2/Part3 successfully.
     - `test`: package for unit tests
     
 ## Codes to implement
-Under `src/CSCI485ClassProject`, there are 2 classes to finish:
-- `RelationalAlgebraOperatorsImpl`: implementation of an interface class `RelationalAlgebraOperators`
-- `Iterator`: `Iterator` is an abstract class of the concept of Iterator. 
-You need to implement derivative classes of `Iterator` to implement required features.
+Under `src/CSCI485ClassProject`, there is 1 class to finish:
+- `IndexesImpl`: implementation of an interface class `Indexes`
+
+Also, `RecordsImpl` need to be augmented in order to incorporate indexes.
+Feel free to modify other implementations like `Cursor` if needed.
 
 ## Run Tests on macOS/Linux using `make`
 

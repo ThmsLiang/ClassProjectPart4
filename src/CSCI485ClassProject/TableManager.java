@@ -1,9 +1,8 @@
 package CSCI485ClassProject;
 
 import java.util.HashMap;
-import CSCI485ClassProject.StatusCode;
+
 import CSCI485ClassProject.models.AttributeType;
-import CSCI485ClassProject.models.IndexType;
 import CSCI485ClassProject.models.TableMetadata;
 
 /**
@@ -32,7 +31,8 @@ public interface TableManager {
   public StatusCode createTable(String tableName, String[] attributeNames,
                                 AttributeType[] attributeTypes, String[] primaryKeyAttributeNames);
 
-
+  public StatusCode createProjectTable(String tableName, String[] attributeNames, AttributeType[] attributeType,
+                                String[] primaryKeyAttributeNames);
   /**
    * Delete a table by its name
    *

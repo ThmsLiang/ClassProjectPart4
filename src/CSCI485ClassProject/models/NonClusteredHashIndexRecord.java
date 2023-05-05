@@ -1,6 +1,5 @@
 package CSCI485ClassProject.models;
 
-import CSCI485ClassProject.models.IndexType;
 import com.apple.foundationdb.tuple.Tuple;
 
 import java.util.ArrayList;

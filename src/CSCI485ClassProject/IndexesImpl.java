@@ -29,7 +29,7 @@ public class IndexesImpl implements Indexes{
   private TableMetadata getTableMetadataByTableName(Transaction tx, String tableName) {
     TableMetadataTransformer tblMetadataTransformer = new TableMetadataTransformer(tableName);
     List<FDBKVPair> kvPairs = FDBHelper.getAllKeyValuePairsOfSubdirectory(db, tx,
-        tblMetadataTransformer.getTableAttributeStorePath());
+            tblMetadataTransformer.getTableAttributeStorePath());
     TableMetadata tblMetadata = tblMetadataTransformer.convertBackToTableMetadata(kvPairs);
     return tblMetadata;
   }

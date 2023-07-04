@@ -1,11 +1,16 @@
-# Class Project: Part 4
+# ThomasSQL
 
-This repo is the base codes of the ClassProject of 2023Spring CSCI485.
+This repo is the completed version of the ClassProject of 2023Spring CSCI485.
 
-## Getting Started
-You need to copy and paste the code of Part 1, 2 and 3 to this project. 
-Your codes need to be put under `src/CSCI485ClassProject/` and its subdirectories. 
-Verify correctness by executing the unit test of Part1/Part2/Part3 successfully.
+## Overview
+This project builds a relational databse based on [FoundationDB](https://www.foundationdb.org/) - a NoSQL databse.
+The database implemented following functions:
+- Create, drop, edit tables with primary keys.
+- Insert, update, delete columns.
+- Cursors that can iterate over a table in forward or backward order.
+- Hash indexing and B-tree indexing.
+- Relation algebra such as join, group ...
+- Transactions with ACID properties.
 
 ## Project Structure Overview
 
@@ -15,12 +20,6 @@ Verify correctness by executing the unit test of Part1/Part2/Part3 successfully.
     - `models`: package storing some defined representations of models in the database.
     - `test`: package for unit tests
     
-## Codes to implement
-Under `src/CSCI485ClassProject`, there are 2 classes to finish:
-- `RelationalAlgebraOperatorsImpl`: implementation of an interface class `RelationalAlgebraOperators`
-- `Iterator`: `Iterator` is an abstract class of the concept of Iterator. 
-You need to implement derivative classes of `Iterator` to implement required features.
-
 ## Run Tests on macOS/Linux using `make`
 
 If you are developing in `macOS/Linux` environment(recommended), we provide `Makefile` for you to run tests quickly.

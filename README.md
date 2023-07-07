@@ -6,7 +6,7 @@ This repo is the completed version of the ClassProject of 2023Spring CSCI485.
 This project builds a relational databse based on [FoundationDB](https://www.foundationdb.org/) - a NoSQL databse.
 The database implemented following functions:
 - Create, drop, edit tables with primary keys.
-- Insert, update, delete columns.
+- Insert, update, delete columns. Support three data types: INT, DOUBLE, VARCHAR.
 - Cursors that can iterate over a table in forward or backward order.
 - Hash indexing and B-tree indexing.
 - Relation algebra such as join, group ...
